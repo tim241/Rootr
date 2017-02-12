@@ -28,10 +28,9 @@ namespace Rootr
                     Toast.MakeText(ApplicationContext, e.ToString(), ToastLength.Long).Show(); 
             }
             Button button1 = FindViewById<Button>(Resource.Id.button1);
-            button1.Click += delegate
-            {
-                StartActivity(typeof(mount));
-            };
+            Button button2 = FindViewById<Button>(Resource.Id.button2);
+            button1.Click += delegate { StartActivity(typeof(mount)); };
+            button2.Click += delegate { StartActivity(typeof(dd)); };
         }
     }
 }
